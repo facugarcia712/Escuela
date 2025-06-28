@@ -1,0 +1,267 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente principal para el texto */
+    background-color: #1a202c; /* ¡Página entera con fondo oscuro distinto! */
+    color: #f8f9fa; /* Color de texto claro para el cuerpo de la página */
+}
+
+/* Estilos para los títulos usando la fuente Montserrat */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* este es el texto superior */
+.text-center.py-5.bg-light {
+    background-color: #1a202c !important; /* Fondo del header igual al del body */
+    color: #f8f9fa; /* Color general del texto del header a blanco */
+}
+
+.text-center.py-5.bg-light h1 {
+    color: #aebfd1 !important; /* Tono azulado oscuro para el h1 */
+}
+
+.text-center.py-5.bg-light p.lead {
+    color: #aebfd1 !important; /* Tono azulado oscuro para el párrafo lead */
+}
+
+
+/* Contenedor principal de la línea de tiempo */
+.timeline-container {
+    position: relative; /* Necesario para posicionar la línea central y las fechas */
+    padding: 60px 0; /* Espacio interno superior e inferior */
+    background: #2d3748; /* Fondo oscuro para el contenedor de la línea de tiempo */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* Sombra de caja más pronunciada para fondo oscuro */
+    min-height: 2700px; /* Altura mínima ajustada para 26 elementos + espacio */
+    border-radius: 10px;
+    overflow: hidden;
+    color: #ecf0f1; /* Color de texto claro para el contenido general del contenedor */
+}
+
+/* Color del título Hitos Importantes dentro del contenedor oscuro */
+.timeline-container h2 {
+    color: #f8f9fa !important; /* Blanco, para que resalte en el fondo oscuro */
+}
+
+/* La línea central vertical que representa el eje del tiempo */
+.timeline-line {
+    position: absolute;
+    width: 10px; /* Grosor de la línea: ¡Más ancha! */
+    /* Gradiente para la línea de tiempo, con colores más vibrantes y notorios */
+    background: linear-gradient(
+        to bottom,
+        #00BCD4 0%,        /* Teal vibrante */
+        #4CAF50 20%,       /* Verde esmeralda */
+        #FFEB3B 40%,       /* Amarillo brillante */
+        #FF5722 60%,       /* Naranja rojizo */
+        #9C27B0 80%,       /* Púrpura intenso */
+        #00BCD4 100%       /* Repite el primer color para un ciclo visual */
+    );
+    top: 80px;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Estilos para cada "item" o evento en la línea de tiempo */
+.timeline-item {
+    position: relative;
+    margin-bottom: 100px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Estilos para la "píldora" de la fecha que se sitúa en la línea */
+.timeline-date-on-line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #007bff; /* Mantiene el azul para contraste */
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+    min-width: 80px;
+    text-align: center;
+    z-index: 5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para destacar en fondo oscuro */
+    border: 2px solid #ffffff; /* Borde blanco para destacarse sobre la línea */
+}
+
+/* Contenedor de la caja de contenido (para posicionar izquierda/derecha) */
+.timeline-content-box {
+    width: calc(50% - 60px);
+    position: relative;
+}
+
+/* Estilos para las cajas de contenido a la izquierda de la línea */
+.timeline-content-box.left-box {
+    margin-right: auto;
+    padding-right: 40px;
+    text-align: right;
+}
+
+/* Línea de conexión para las cajas de la izquierda */
+.timeline-content-box.left-box::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -1px;
+    width: 40px;
+    height: 2px;
+    background-color: #007bff; /* Color de la línea de conexión */
+    transform: translateY(-50%);
+    z-index: 4;
+}
+
+/* Estilos para las cajas de contenido a la derecha de la línea */
+.timeline-content-box.right-box {
+    margin-left: auto;
+    padding-left: 40px;
+    text-align: left;
+}
+
+/* Línea de conexión para las cajas de la derecha */
+.timeline-content-box.right-box::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -1px;
+    width: 40px;
+    height: 2px;
+    background-color: #007bff; /* Color de la línea de conexión */
+    transform: translateY(-50%);
+    z-index: 4;
+}
+
+/* Contenido real de la tarjeta del evento */
+.timeline-content {
+    background-color: #3a475a; /* ¡Fondo oscuro para las tarjetas! */
+    padding: 12px; /* ¡Padding aún más pequeño para tarjetas más chicas! */
+    border-radius: 8px;
+    border: 1px solid #4a5b70; /* Borde más oscuro para tarjetas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra ajustada para fondo oscuro */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Transición para color de fondo */
+    color: #f8f9fa; /* Texto claro para las tarjetas */
+}
+
+/* Efecto al pasar el mouse sobre la tarjeta del evento */
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada en hover */
+    background-color: #4e5e77; /* Color de fondo ligeramente más claro en hover */
+    color: #87ceeb; /* ¡Cambia el color del texto principal a un azul claro vibrante! */
+}
+
+/* Estilo para los títulos h3 dentro del contenido del item - Fuente más grande */
+.timeline-content h3 {
+    font-size: 1.2em; /* ¡Ajusta el tamaño de la fuente para los títulos h3! */
+    margin-bottom: 8px;
+}
+
+/* Estilo para los párrafos dentro del contenido del item - Fuente más grande */
+.timeline-content p {
+    font-size: 0.9em; /* ¡Reduce el tamaño de la fuente para los párrafos! */
+    margin-bottom: 5px;
+}
+
+/* Estilos para el contenido del modal - ¡Fuente más grande y texto más oscuro! */
+/* este es el fondo de la ventanita */
+.modal-content {
+    background-color: #3a475a; /* Fondo oscuro para la ventanita */
+    color: #f8f9fa; /* Letras blancas para la ventanita */
+}
+
+.modal-body p {
+    font-size: 1.1em;
+    color: #f8f9fa; /* Texto blanco para párrafos en modal */
+    line-height: 1.6;
+}
+
+/* Estilos para las imágenes dentro del modal - Centradas */
+.modal-body img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para el texto de impacto en el modal - También centrado */
+.modal-body .text-muted.small {
+    font-size: 0.95em;
+    color: #ced4da !important; /* Color claro para texto mutado en modal oscuro */
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+/* MEDIA QUERIES - Ajustes responsivos para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+    .timeline-container {
+        padding: 30px 0;
+        min-height: auto; /* Altura automática en móvil */
+    }
+
+    .timeline-line {
+        left: 20px;
+        transform: none;
+        top: 60px;
+        bottom: 60px;
+    }
+
+    /* En móvil, los items ya no se alternan, todos se ven como "left-box" */
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 80px;
+    }
+
+    .timeline-date-on-line {
+        position: relative;
+        left: auto;
+        transform: none;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        align-self: flex-start;
+        width: auto;
+    }
+
+    .timeline-content-box {
+        width: calc(100% - 40px);
+        margin-left: 40px;
+        margin-right: 0;
+        padding-right: 15px;
+        padding-left: 0;
+    }
+
+    /* Línea de conexión en móvil, desde la izquierda */
+    .timeline-content-box.left-box::before,
+    .timeline-content-box.right-box::before {
+        left: -20px;
+        right: auto;
+        top: 0px;
+        height: 100%;
+        width: 2px;
+        transform: none;
+    }
+
+    /* Ajustes para los modales en pantallas pequeñas */
+    .modal-dialog {
+        margin: 0.5rem;
+    }
+
+    /* Ajustes de fuente para modales en móvil */
+    .modal-body p {
+        font-size: 1em;
+    }
+
+    .modal-body .text-muted.small {
+        font-size: 0.9em;
+    }
+}

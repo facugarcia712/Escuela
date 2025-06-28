@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Línea de Tiempo de la Tecnología Educativa</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a nuestro CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts para una fuente elegante (Montserrat y Roboto) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabecera de la página -->
+    <header class="text-center py-5 bg-light">
+        <h1 class="display-4 fw-bold">Evolución de la Tecnología Educativa</h1>
+        <p class="lead">Un recorrido por los hitos que cambiaron el mundo de la enseñanza y el aprendizaje.</p>
+    </header>
+
+    <!-- Contenedor principal de la línea de tiempo -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+                <!-- El contenedor que alberga la línea de tiempo con su fondo degradado y sombra -->
+                <div class="timeline-container shadow-lg p-4 rounded-3">
+                    <!-- Título dentro del contenedor de la línea de tiempo -->
+                    <h2 class="text-center mb-5 fw-bold text-primary">Hitos Importantes</h2>
+
+                    <!-- Item 1: Siglo V a.C. – Sócrates critica la escritura (Izquierda) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">S. V a.C.</div>
+                        <div class="timeline-content-box left-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalSocrates">
+                                <h3 class="fw-bold">Sócrates y la escritura</h3>
+                                <p>Crítica a la escritura por debilitar la memoria.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Siglo VII a.C. – Tablas de piedra (Derecha) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">S. VII a.C.</div>
+                        <div class="timeline-content-box right-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalTablasPiedra">
+                                <h3 class="fw-bold">Tablas de piedra</h3>
+                                <p>Moisés transmite leyes; primeros usos educativos del texto.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Siglo XV (1450) – Imprenta de Gutenberg (Izquierda) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1450</div>
+                        <div class="timeline-content-box left-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalGutenberg">
+                                <h3 class="fw-bold">Imprenta de Gutenberg</h3>
+                                <p>Reproducción masiva de libros, democratizando el conocimiento.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: 1635 – Comenio y el aula (Derecha) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1635</div>
+                        <div class="timeline-content-box right-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalComenio">
+                                <h3 class="fw-bold">Comenio y el Aula</h3>
+                                <p>Establece el modelo escolar por niveles y tiempos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: 1650 – Cartilla de enseñanza (Izquierda) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1650</div>
+                        <div class="timeline-content-box left-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalCartilla">
+                                <h3 class="fw-bold">Cartilla de Enseñanza</h3>
+                                <p>Paleta de madera con lecciones, alfabeto y números.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: 1800s – Libro escolar (Derecha) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1800s</div>
+                        <div class="timeline-content-box right-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalLibroEscolar">
+                                <h3 class="fw-bold">Libro Escolar</h3>
+                                <p>Principal recurso educativo en escuelas de todo el mundo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 7: 1870 – Linterna mágica (Izquierda) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1870</div>
+                        <div class="timeline-content-box left-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalLinternaMagica">
+                                <h3 class="fw-bold">Linterna Mágica</h3>
+                                <p>Proyectaba imágenes fijas; antecedente del cine educativo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 8: 1890 – Tiza y pizarrón (Derecha) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1890</div>
+                        <div class="timeline-content-box right-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalTizaPizarron">
+                                <h3 class="fw-bold">Tiza y Pizarrón</h3>
+                                <p>Herramientas básicas para la enseñanza visual.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 9: 1900 – Lápiz grafito (Izquierda) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1900</div>
+                        <div class="timeline-content-box left-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalLapizGrafito">
+                                <h3 class="fw-bold">Lápiz Grafito</h3>
+                                <p>Sustituye a la pluma, facilita escritura y corrección.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 10: 1905 – Estereoscopio (Derecha) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1905</div>
+                        <div class="timeline-content-box right-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalEstereoscopio">
+                                <h3 class="fw-bold">Estereoscopio</h3>
+                                <p>Permitía observar imágenes en 3D; usado para ciencias.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 11: 1925 – Proyector de cine (Izquierda) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1925</div>
+                        <div class="timeline-content-box left-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalProyectorCine">
+                                <h3 class="fw-bold">Proyector de Cine</h3>
+                                <p>Películas educativas proyectadas; mejora acceso a contenidos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 12: 1930 – Retroproyector (Derecha) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1930</div>
+                        <div class="timeline-content-box right-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalRetroproyector">
+                                <h3 class="fw-bold">Retroproyector</h3>
+                                <p>Proyecta imágenes en transparencias; útil en clases expositivas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 13: 1940 – Bolígrafo (Izquierda) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1940</div>
+                        <div class="timeline-content-box left-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalBoligrafo">
+                                <h3 class="fw-bold">Bolígrafo</h3>
+                                <p>Sustituye a la pluma, más cómodo y práctico.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 14: 1940 – Mimeógrafo (Derecha) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1940</div>
+                        <div class="timeline-content-box right-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalMimeografo">
+                                <h3 class="fw-bold">Mimeógrafo</h3>
+                                <p>Reproduce copias de hojas; precursor de la fotocopiadora.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 15: 1950 – Auriculares (Izquierda) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1950</div>
+                        <div class="timeline-content-box left-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalAuriculares">
+                                <h3 class="fw-bold">Auriculares</h3>
+                                <p>Usados para enseñanza de idiomas y audición individual.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 16: 1950 – Regla de cálculo (Derecha) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1950</div>
+                        <div class="timeline-content-box right-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalReglaCalculo">
+                                <h3 class="fw-bold">Regla de Cálculo</h3>
+                                <p>Herramienta analógica en matemáticas y física.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 17: 1954 – Máquina de Skinner (Izquierda) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1954</div>
+                        <div class="timeline-content-box left-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalSkinner">
+                                <h3 class="fw-bold">Máquina de Skinner</h3>
+                                <p>Dispositivo para aprendizaje programado y autónomo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 18: 1958 – Televisión educativa (Derecha) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1958</div>
+                        <div class="timeline-content-box right-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalTVeducativa">
+                                <h3 class="fw-bold">Televisión Educativa</h3>
+                                <p>Transmite contenidos escolares y culturales para el hogar.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 19: 1960 – Corrector líquido (Izquierda) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1960</div>
+                        <div class="timeline-content-box left-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalCorrectorLiquido">
+                                <h3 class="fw-bold">Corrector Líquido</h3>
+                                <p>Permite corregir errores en tinta fácilmente.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 20: 1970 (mediados) – Calculadora eléctrica (Derecha) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1970s</div>
+                        <div class="timeline-content-box right-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalCalculadoraElectrica">
+                                <h3 class="fw-bold">Calculadora Eléctrica</h3>
+                                <p>Se integra al aula para cálculos rápidos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 21: 1972 – Scatron (Izquierda) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1972</div>
+                        <div class="timeline-content-box left-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalScatron">
+                                <h3 class="fw-bold">Scatron</h3>
+                                <p>Corrige exámenes de opción múltiple automáticamente.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 22: 1980 – Computadora personal (Derecha) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1980</div>
+                        <div class="timeline-content-box right-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalComputadoraPersonal">
+                                <h3 class="fw-bold">Computadora Personal</h3>
+                                <p>Se introduce en escuelas como recurso educativo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 23: 1990s – Internet y LMS (Izquierda) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1990s</div>
+                        <div class="timeline-content-box left-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalInternetLMS">
+                                <h3 class="fw-bold">Internet y LMS</h3>
+                                <p>Nacen plataformas para educación a distancia.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 24: 1999 – Pizarra interactiva (Derecha) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">1999</div>
+                        <div class="timeline-content-box right-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalPizarraInteractiva">
+                                <h3 class="fw-bold">Pizarra Interactiva</h3>
+                                <p>Combina lo digital con lo tradicional para enseñar.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 25: Siglo XXI – Tablets, iPads y redes (Izquierda) -->
+                    <div class="timeline-item">
+                        <div class="timeline-date-on-line">S. XXI</div>
+                        <div class="timeline-content-box left-box">
+                            <div class="timeline-content" data-bs-toggle="modal" data-bs-target="#modalTabletsRedes">
+                                <h3 class="fw-bold">Tablets, iPads y Redes</h3>
+                                <p>Dispositivos móviles transforman la forma de enseñar y aprender.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- La línea vertical central de la línea de tiempo -->
+                    <div class="timeline-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals (ventanitas emergentes para los detalles de cada evento) -->
+
+    <!-- Modal: Sócrates critica la escritura -->
+    <div class="modal fade" id="modalSocrates" tabindex="-1" aria-labelledby="modalSocratesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="modalSocratesLabel">Siglo V a.C.: Sócrates critica la escritura</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Sócrates, el filósofo griego, expresaba su preocupación de que la escritura, al fijar el conocimiento en pergaminos, debilitaría la memoria natural de los estudiantes y su capacidad para el diálogo y el razonamiento oral. Él creía en el poder de la palabra hablada y la interacción directa para el aprendizaje profundo.</p>
+                    <img src="https://placehold.co/600x300/0d6efd/ffffff?text=Socrates" class="img-fluid rounded my-3" alt="Sócrates filosofando">
+                    <p class="text-muted small">Impacto: Debate filosófico sobre las tecnologías de la información y la retención del conocimiento.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Tablas de piedra -->
+    <div class="modal fade" id="modalTablasPiedra" tabindex="-1" aria-labelledby="modalTablasPiedraLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="modalTablasPiedraLabel">Siglo VII a.C.: Tablas de piedra</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>La tradición bíblica narra cómo Moisés recibió las leyes de Dios grabadas en tablas de piedra, un ejemplo temprano del uso del texto escrito como un medio autoritario y duradero para transmitir conocimiento y normativas. Este método aseguraba la permanencia y la fidelidad del mensaje a través del tiempo.</p>
+                    <img src="https://placehold.co/600x300/20c997/ffffff?text=Tablas+de+Piedra" class="img-fluid rounded my-3" alt="Tablas de la Ley">
+                    <p class="text-muted small">Impacto: Orígenes de la transmisión escrita de la ley y el conocimiento fundamental.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Imprenta de Gutenberg -->
+    <div class="modal fade" id="modalGutenberg" tabindex="-1" aria-labelledby="modalGutenbergLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title" id="modalGutenbergLabel">1450: Imprenta de Gutenberg</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>La invención de la imprenta de tipos móviles por Johannes Gutenberg en Maguncia, Alemania, revolucionó la producción de libros. Permitió reproducir textos de manera rápida y económica, lo que llevó a una democratización sin precedentes del conocimiento y sentó las bases para la Reforma y el Renacimiento.</p>
+                    <img src="https://placehold.co/600x300/0dcaf0/ffffff?text=Imprenta+Gutenberg" class="img-fluid rounded my-3" alt="Imprenta de Gutenberg">
+                    <p class="text-muted small">Impacto: Democratización del conocimiento, expansión de la alfabetización, revolución científica.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Comenio y el aula -->
+    <div class="modal fade" id="modalComenio" tabindex="-1" aria-labelledby="modalComenioLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-white">
+                    <h5 class="modal-title" id="modalComenioLabel">1635: Comenio y el Aula</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Jan Amos Comenius (Comenio), pedagogo, filósofo y teólogo, es considerado el padre de la pedagogía moderna. En su obra "Didáctica Magna" (1632), propuso un sistema escolar graduado, con clases organizadas por niveles y tiempos, buscando una enseñanza universal y gradual. Su enfoque marcó el inicio de la escuela moderna tal como la conocemos.</p>
+                    <img src="https://placehold.co/600x300/ffc107/333333?text=Comenio+y+el+Aula" class="img-fluid rounded my-3" alt="Comenio y el aula">
+                    <p class="text-muted small">Impacto: Fundamentos de la pedagogía moderna, organización de la educación formal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Cartilla de enseñanza -->
+    <div class="modal fade" id="modalCartilla" tabindex="-1" aria-labelledby="modalCartillaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="modalCartillaLabel">1650: Cartilla de Enseñanza</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>La cartilla de enseñanza, a menudo una paleta de madera, era una de las primeras herramientas didácticas individuales. Tenía impresas lecciones básicas, el alfabeto y los números del 1 al 10, sirviendo como el primer contacto del estudiante con la lectura y la aritmética de forma estructurada.</p>
+                    <img src="https://placehold.co/600x300/dc3545/ffffff?text=Cartilla+de+Ensenanza" class="img-fluid rounded my-3" alt="Cartilla de enseñanza">
+                    <p class="text-muted small">Impacto: Herramienta fundamental para la alfabetización temprana y la enseñanza de los fundamentos.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Libro escolar -->
+    <div class="modal fade" id="modalLibroEscolar" tabindex="-1" aria-labelledby="modalLibroEscolarLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-secondary text-white">
+                    <h5 class="modal-title" id="modalLibroEscolarLabel">1800s: Libro Escolar</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Durante el siglo XIX, el libro escolar se consolidó como el principal recurso didáctico en las escuelas de todo el mundo. Su estandarización y distribución masiva permitieron un currículo más uniforme y accesible, convirtiéndose en el pilar del aprendizaje estructurado.</p>
+                    <img src="https://placehold.co/600x300/6c757d/ffffff?text=Libro+Escolar" class="img-fluid rounded my-3" alt="Libro escolar antiguo">
+                    <p class="text-muted small">Impacto: Estandarización del currículo, recurso central para el aprendizaje en el aula.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Linterna mágica -->
+    <div class="modal fade" id="modalLinternaMagica" tabindex="-1" aria-labelledby="modalLinternaMagicaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="modalLinternaMagicaLabel">1870: Linterna Mágica</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>La linterna mágica, un precursor del proyector moderno, era utilizada para proyectar imágenes fijas (dibujos o fotografías en placas de vidrio) sobre una superficie. En el ámbito educativo, permitía ilustrar temas en clase de forma visual, añadiendo una nueva dimensión a la enseñanza que antes era puramente textual.</p>
+                    <img src="https://placehold.co/600x300/343a40/ffffff?text=Linterna+Magica" class="img-fluid rounded my-3" alt="Linterna Mágica">
+                    <p class="text-muted small">Impacto: Inicio de la visualización en el aula, antecedente de las tecnologías audiovisuales.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Tiza y pizarrón -->
+    <div class="modal fade" id="modalTizaPizarron" tabindex="-1" aria-labelledby="modalTizaPizarronLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="modalTizaPizarronLabel">1890: Tiza y Pizarrón</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>La tiza y el pizarrón se convirtieron en herramientas básicas y universales para la enseñanza visual directa en el aula. Permitieron a los maestros escribir, dibujar y explicar conceptos en tiempo real, facilitando la interacción y la comprensión de los estudiantes. Su simplicidad y efectividad los hicieron indispensables.</p>
+                    <img src="https://placehold.co/600x300/0d6efd/ffffff?text=Tiza+y+Pizarron" class="img-fluid rounded my-3" alt="Tiza y Pizarrón">
+                    <p class="text-muted small">Impacto: Herramientas esenciales para la enseñanza en tiempo real y la interacción en el aula.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Lápiz grafito -->
+    <div class="modal fade" id="modalLapizGrafito" tabindex="-1" aria-labelledby="modalLapizGrafitoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="modalLapizGrafitoLabel">1900: Lápiz Grafito</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>La popularización del lápiz de grafito sustituyó gradualmente a la pluma y la tinta en las aulas. Su facilidad de uso, la capacidad de borrar y corregir errores sin estropear el papel, y su portabilidad lo convirtieron en una herramienta fundamental para los estudiantes, agilizando el proceso de escritura y aprendizaje.</p>
+                    <img src="https://placehold.co/600x300/20c997/ffffff?text=Lapiz+Grafito" class="img-fluid rounded my-3" alt="Lápiz grafito">
+                    <p class="text-muted small">Impacto: Mejora la escritura y la corrección, fomenta la experimentación en el aprendizaje.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Estereoscopio -->
+    <div class="modal fade" id="modalEstereoscopio" tabindex="-1" aria-labelledby="modalEstereoscopioLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title" id="modalEstereoscopioLabel">1905: Estereoscopio</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>El estereoscopio, un dispositivo óptico, permitía observar imágenes planas con una ilusión de profundidad en 3D. Fue utilizado en la educación para enseñar geografía, anatomía y ciencias naturales, ofreciendo una experiencia visual más inmersiva y realista de los objetos y paisajes estudiados.</p>
+                    <img src="https://placehold.co/600x300/0dcaf0/ffffff?text=Estereoscopio" class="img-fluid rounded my-3" alt="Estereoscopio">
+                    <p class="text-muted small">Impacto: Introducción de la visualización 3D en la educación, mejora la comprensión espacial.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Proyector de cine -->
+    <div class="modal fade" id="modalProyectorCine" tabindex="-1" aria-labelledby="modalProyectorCineLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-white">
+                    <h5 class="modal-title" id="modalProyectorCineLabel">1925: Proyector de Cine</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>La introducción del proyector de cine en las escuelas permitió la proyección de películas educativas, documentales y noticieros en el aula. Esto significó un gran avance en el acceso a contenidos visuales y dinámicos, enriqueciendo las clases y llevando el mundo exterior directamente a los estudiantes.</p>
+                    <img src="https://placehold.co/600x300/ffc107/333333?text=Proyector+de+Cine" class="img-fluid rounded my-3" alt="Proyector de cine">
+                    <p class="text-muted small">Impacto: Mejora del acceso a contenidos audiovisuales, aprendizaje más dinámico y envolvente.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Retroproyector -->
+    <div class="modal fade" id="modalRetroproyector" tabindex="-1" aria-labelledby="modalRetroproyectorLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="modalRetroproyectorLabel">1930: Retroproyector</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>El retroproyector se convirtió en una herramienta omnipresente en las aulas, permitiendo a los docentes proyectar imágenes y textos escritos o dibujados en transparencias. Era particularmente útil en clases expositivas, ya que el profesor podía escribir o señalar directamente sobre la transparencia mientras interactuaba con los estudiantes, sin dar la espalda a la clase.</p>
+                    <img src="https://placehold.co/600x300/dc3545/ffffff?text=Retroproyector" class="img-fluid rounded my-3" alt="Retroproyector">
+                    <p class="text-muted small">Impacto: Mejora de la enseñanza expositiva, interactividad en tiempo real con el material.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Bolígrafo -->
+    <div class="modal fade" id="modalBoligrafo" tabindex="-1" aria-labelledby="modalBoligrafoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-secondary text-white">
+                    <h5 class="modal-title" id="modalBoligrafoLabel">1940: Bolígrafo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>El bolígrafo, al ser más cómodo, práctico y menos propenso a manchas que la pluma, rápidamente se adoptó en las escuelas. Facilitó la toma de apuntes, la realización de tareas y la escritura en general para los estudiantes, ofreciendo una experiencia de escritura más fluida y sin interrupciones.</p>
+                    <img src="https://placehold.co/600x300/6c757d/ffffff?text=Boligrafo" class="img-fluid rounded my-3" alt="Bolígrafo">
+                    <p class="text-muted small">Impacto: Mejora la eficiencia de la escritura, herramienta personal universal para el estudiante.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Mimeógrafo -->
+    <div class="modal fade" id="modalMimeografo" tabindex="-1" aria-labelledby="modalMimeografoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="modalMimeografoLabel">1940: Mimeógrafo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>El mimeógrafo permitió la reproducción de múltiples copias de hojas escritas o dibujadas. Fue un precursor vital de la fotocopiadora en las escuelas, facilitando la distribución de materiales didácticos, exámenes y comunicados a grandes grupos de estudiantes de manera rápida y económica.</p>
+                    <img src="https://placehold.co/600x300/343a40/ffffff?text=Mimeografo" class="img-fluid rounded my-3" alt="Mimeógrafo">
+                    <p class="text-muted small">Impacto: Facilita la distribución de material didáctico, precursor de la era de la copia masiva.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Auriculares -->
+    <div class="modal fade" id="modalAuriculares" tabindex="-1" aria-labelledby="modalAuricularesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="modalAuricularesLabel">1950: Auriculares</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Los auriculares se implementaron en la enseñanza de idiomas y en laboratorios de audición para permitir el aprendizaje individualizado y la práctica de la escucha sin distracciones. Ofrecieron a los estudiantes la capacidad de interactuar con contenido de audio a su propio ritmo y nivel.</p>
+                    <img src="https://placehold.co/600x300/0d6efd/ffffff?text=Auriculares" class="img-fluid rounded my-3" alt="Auriculares">
+                    <p class="text-muted small">Impacto: Fomenta el aprendizaje individualizado, mejora la práctica de idiomas y la comprensión auditiva.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Regla de cálculo -->
+    <div class="modal fade" id="modalReglaCalculo" tabindex="-1" aria-labelledby="modalReglaCalculoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="modalReglaCalculoLabel">1950: Regla de Cálculo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Antes de la llegada de las calculadoras electrónicas, la regla de cálculo era una herramienta analógica esencial para realizar multiplicaciones, divisiones, logaritmos y funciones trigonométricas. Fue ampliamente utilizada por estudiantes de matemáticas, física e ingeniería, enseñando principios de escala y aproximación.</p>
+                    <img src="https://placehold.co/600x300/20c997/ffffff?text=Regla+de+Calculo" class="img-fluid rounded my-3" alt="Regla de cálculo">
+                    <p class="text-muted small">Impacto: Herramienta fundamental para el cálculo avanzado en la era pre-digital.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Máquina de Skinner -->
+    <div class="modal fade" id="modalSkinner" tabindex="-1" aria-labelledby="modalSkinnerLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title" id="modalSkinnerLabel">1954: Máquina de Skinner</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>B.F. Skinner, psicólogo conductista, desarrolló "máquinas de enseñanza" que aplicaban los principios del conductismo al aprendizaje. Estos dispositivos presentaban material en pequeños pasos, requerían una respuesta activa del estudiante y proporcionaban retroalimentación inmediata, promoviendo un aprendizaje programado y autónomo.</p>
+                    <img src="https://placehold.co/600x300/0dcaf0/ffffff?text=Maquina+de+Skinner" class="img-fluid rounded my-3" alt="Máquina de Skinner">
+                    <p class="text-muted small">Impacto: Desarrollo del aprendizaje programado, base para el diseño instruccional y software educativo.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Televisión educativa -->
+    <div class="modal fade" id="modalTVeducativa" tabindex="-1" aria-labelledby="modalTVeducativaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-white">
+                    <h5 class="modal-title" id="modalTVeducativaLabel">1958: Televisión Educativa</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>La televisión educativa comenzó a transmitir programas escolares y culturales, extendiendo el alcance de la educación más allá del aula. Permitió el acceso al aprendizaje en casa para millones de estudiantes, especialmente en áreas rurales o con recursos limitados, y ofreció una nueva forma de presentar contenidos complejos.</p>
+                    <img src="https://placehold.co/600x300/ffc107/333333?text=TV+Educativa" class="img-fluid rounded my-3" alt="Televisión educativa">
+                    <p class="text-muted small">Impacto: Expansión del acceso a la educación, introducción del video como medio de enseñanza masiva.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Corrector líquido -->
+    <div class="modal fade" id="modalCorrectorLiquido" tabindex="-1" aria-labelledby="modalCorrectorLiquidoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="modalCorrectorLiquidoLabel">1960: Corrector Líquido</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>El corrector líquido, o "Liquid Paper", revolucionó la forma en que los estudiantes podían corregir errores en trabajos escritos a mano o a máquina. Ofreció una manera rápida y limpia de rectificar equivocaciones, facilitando la presentación de trabajos pulcros y reduciendo la frustración por los errores permanentes.</p>
+                    <img src="https://placehold.co/600x300/dc3545/ffffff?text=Corrector+Liquido" class="img-fluid rounded my-3" alt="Corrector líquido">
+                    <p class="text-muted small">Impacto: Mejora la presentación de trabajos escritos, reduce el estrés por errores.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Calculadora eléctrica -->
+    <div class="modal fade" id="modalCalculadoraElectrica" tabindex="-1" aria-labelledby="modalCalculadoraElectricaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-secondary text-white">
+                    <h5 class="modal-title" id="modalCalculadoraElectricaLabel">1970s: Calculadora Eléctrica</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>A mediados de la década de 1970, la calculadora electrónica comenzó a integrarse en el aula, transformando la enseñanza y el aprendizaje de las matemáticas. Permitió a los estudiantes realizar cálculos complejos de forma rápida, liberando tiempo para concentrarse en la resolución de problemas y el entendimiento de conceptos matemáticos.</p>
+                    <img src="https://placehold.co/600x300/6c757d/ffffff?text=Calculadora+Electrica" class="img-fluid rounded my-3" alt="Calculadora eléctrica">
+                    <p class="text-muted small">Impacto: Agiliza cálculos, permite centrarse en la conceptualización matemática.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Scatron -->
+    <div class="modal fade" id="modalScatron" tabindex="-1" aria-labelledby="modalScatronLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title" id="modalScatronLabel">1972: Scatron</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>El Scantron, un sistema de lectura óptica de marcas, revolucionó la corrección de exámenes de opción múltiple. Permitió calificar grandes volúmenes de pruebas de manera automática y rápida, agilizando el proceso de evaluación y proporcionando retroalimentación más eficiente tanto a estudiantes como a educadores.</p>
+                    <img src="https://placehold.co/600x300/343a40/ffffff?text=Scatron" class="img-fluid rounded my-3" alt="Scatron">
+                    <p class="text-muted small">Impacto: Agiliza la evaluación masiva, eficiencia en la gestión de calificaciones.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Computadora personal -->
+    <div class="modal fade" id="modalComputadoraPersonal" tabindex="-1" aria-labelledby="modalComputadoraPersonalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="modalComputadoraPersonalLabel">1980: Computadora Personal</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>La introducción de la computadora personal en las escuelas abrió un abanico de posibilidades educativas. Se convirtió en un recurso para la programación, la investigación, el procesamiento de textos y el desarrollo de habilidades digitales, transformando el aula en un espacio para la alfabetización informática y la exploración interactiva.</p>
+                    <img src="https://placehold.co/600x300/0d6efd/ffffff?text=Computadora+Personal" class="img-fluid rounded my-3" alt="Computadora personal">
+                    <p class="text-muted small">Impacto: Alfabetización digital, nuevas formas de aprendizaje interactivo y programación.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Internet y LMS -->
+    <div class="modal fade" id="modalInternetLMS" tabindex="-1" aria-labelledby="modalInternetLMSLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="modalInternetLMSLabel">1990s: Internet y LMS</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>La expansión de Internet y el surgimiento de los Sistemas de Gestión de Aprendizaje (LMS) como WebCT y Blackboard revolucionaron la educación a distancia. Permitieron la creación de cursos en línea, el intercambio de recursos, la colaboración virtual y la gestión de la enseñanza fuera del aula física, abriendo las puertas a la educación virtual.</p>
+                    <img src="https://placehold.co/600x300/20c997/ffffff?text=Internet+y+LMS" class="img-fluid rounded my-3" alt="Internet y LMS">
+                    <p class="text-muted small">Impacto: Educación a distancia, flexibilidad de aprendizaje, acceso global al conocimiento.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Pizarra interactiva -->
+    <div class="modal fade" id="modalPizarraInteractiva" tabindex="-1" aria-labelledby="modalPizarraInteractivaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title" id="modalPizarraInteractivaLabel">1999: Pizarra Interactiva</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>La pizarra interactiva combinó la funcionalidad de un pizarrón tradicional con la capacidad digital de una computadora y un proyector. Permitió a los profesores escribir y proyectar contenido, interactuar con aplicaciones y recursos multimedia directamente en la superficie, facilitando clases más dinámicas e interactivas.</p>
+                    <img src="https://placehold.co/600x300/0dcaf0/ffffff?text=Pizarra+Interactiva" class="img-fluid rounded my-3" alt="Pizarra Interactiva">
+                    <p class="text-muted small">Impacto: Mejora la interactividad en el aula, integración de multimedia y recursos digitales.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Tablets, iPads y redes -->
+    <div class="modal fade" id="modalTabletsRedes" tabindex="-1" aria-labelledby="modalTabletsRedesLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-white">
+                    <h5 class="modal-title" id="modalTabletsRedesLabel">Siglo XXI: Tablets, iPads y Redes</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>La irrupción de tablets, iPads y la omnipresencia de las redes sociales en el siglo XXI transformaron radicalmente la forma de enseñar, aprender y compartir contenidos. Estos dispositivos móviles y plataformas permiten un acceso instantáneo a la información, la creación de contenido multimedia, la colaboración en línea y el aprendizaje personalizado en cualquier momento y lugar.</p>
+                    <img src="https://placehold.co/600x300/ffc107/333333?text=Tablets+y+Redes" class="img-fluid rounded my-3" alt="Tablets, iPads y redes">
+                    <p class="text-muted small">Impacto: Ubicuidad del aprendizaje, personalización, colaboración en línea, recursos multimedia.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Enlace a Bootstrap JS (Popper.js y Bootstrap JS) - ¡Esencial para que los modales funcionen! -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
